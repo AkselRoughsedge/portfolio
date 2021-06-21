@@ -1,0 +1,43 @@
+import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
+import NavBar from '../comps/NavBarShowTracker';
+
+import Img1 from '../Images/ShowTracker/1.png';
+import Img2 from '../Images/ShowTracker/2.png';
+
+import Project from '../comps/Project';
+
+const Page = styled.div`
+display:flex;
+justify-content:center;
+background-color:##f5f6fa;
+`;
+
+const ShowTracker = () => {
+
+    return (
+        <Page>
+           <Project
+           bgcolor="#c24e4e"
+           title="Show Tracker"
+           subTitle1={[<strong>Client:</strong>, " BCIT"]}
+           subTitle2={[<strong>Role:</strong>, " Lead Frontend Developer"]}
+           para1={["In my final semester at BCIT, we were instructed to create an app that allows the user to keep track of data they have entered. My teammates and I decided to create an app for tracking TV shows and movies you have seen."]}
+           img1={Img1}
+           para2={["As the Lead Frontend Developer of the team, I was responsible for creating components and pages as well as making sure the app was working correctly. I routed pages to the navigation bar, and also connected the frontend to the backend using APIs.",<br/>,<br/>,"I also helped the backend with creating endpoints, the ERD, and setting up the schema."]}
+           img2={Img2}
+           list={[
+           <li>React js</li>,
+           <li>React Router</li>,
+           <li>Axios API</li>,
+           <li>Styled Components</li>,
+           <li>Sass</li>,
+           <li>Express js</li>
+        ]}
+           ></Project>
+           <NavBar></NavBar>
+        </Page>
+    )
+}
+
+export default ShowTracker;
