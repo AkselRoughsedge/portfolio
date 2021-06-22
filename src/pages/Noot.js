@@ -22,9 +22,9 @@ const Noot = () => {
            title="Noot"
            subTitle1={[<strong>Client:</strong>, " BCIT"]}
            subTitle2={[<strong>Role:</strong>, " Frontend Developer"]}
-           para1={["In my third semester at BCIT, we were instructed to create an app that would solve a problem within a specific community as our semester-long project. Three other teammates and I decided to create a back-to-school app that helps parents with children in the Burnaby school district."]}
+           para1={["In my third semester at BCIT, we were instructed to create an app that would solve a problem within a specific community as our semester-long project. Three teammates and I decided to create a back-to-school app that helps children return to school safely.",<br/>,<br/>,"Teachers can create ‘classrooms’ within the app that require a special code to join. The teacher gives this special code to their students, who then enter it when creating an account on Noot. Students can see the teachers bulletin posts, answer a daily health checklist, and read information about Covid-19 on the app."]}
            img1={Img1}
-           para2={["As one of the Frontend Developers in the team, I was responsible for building components and pages. I was also responsible for creating functionalities such as form selections and button animations. Once the app’s main pages were complete, I connected the frontend to the backend using APIs and routed pages to the navigation bar."]}
+           para2={["As one of the Frontend Developers in the team, I was responsible for building components and pages. I was also responsible for creating functionalities such as form selections and button animations. Once the app’s main pages were complete, I helped my team connect the frontend to the backend using RESTful APIs and routed pages to the navigation bar.",<br/>,<br/>,"We chose to use React Native for this project to gain experience with the framework. We also used Lottie Animations for loading screens just to try something new."]}
            img2={Img2}
            list={[<li>React Native</li>,<li>React Navigation</li>, <li>Axios API</li>, <li>Lottie Animations</li>]}
            />

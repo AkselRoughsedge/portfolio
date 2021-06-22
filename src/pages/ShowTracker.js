@@ -22,9 +22,9 @@ const ShowTracker = () => {
            title="Show Tracker"
            subTitle1={[<strong>Client:</strong>, " BCIT"]}
            subTitle2={[<strong>Role:</strong>, " Lead Frontend Developer"]}
-           para1={["In my final semester at BCIT, we were instructed to create an app that allows the user to keep track of data they have entered. My teammates and I decided to create an app for tracking TV shows and movies you have seen."]}
+           para1={["In my final semester at BCIT, we were instructed to create an app that allows the user to keep track of data they have entered. My teammates and I decided to create an app for tracking TV shows and movies you have seen.",<br/>,<br/>,"The user is able to enter their own title, description, and image when adding a show. They can also choose if it's a show they're currently watching, planning to watch, or completed in the past."]}
            img1={Img1}
-           para2={["As the Lead Frontend Developer of the team, I was responsible for creating components and pages as well as making sure the app was working correctly. I routed pages to the navigation bar, and also connected the frontend to the backend using APIs.",<br/>,<br/>,"I also helped the backend with creating endpoints, the ERD, and setting up the schema."]}
+           para2={["As the Lead Frontend Developer of the team, I was responsible for creating components and pages as well as making sure the app was finalized correctly. I routed pages to the navigation bar, and also connected the frontend to the backend using RESTful APIs. I also helped the backend with creating endpoints, the ERD, and setting up the schema.",<br/>,<br/>,"We decided to use React js for our frontend, and Express js for our backend. We also stored all of the data within MySQL."]}
            img2={Img2}
            list={[
            <li>React js</li>,
@@ -32,7 +32,8 @@ const ShowTracker = () => {
            <li>Axios API</li>,
            <li>Styled Components</li>,
            <li>Sass</li>,
-           <li>Express js</li>
+           <li>Express js</li>,
+           <li>MySQL Workbench</li>
         ]}
            ></Project>
            <NavBar></NavBar>

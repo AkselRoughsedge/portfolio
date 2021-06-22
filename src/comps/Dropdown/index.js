@@ -41,7 +41,7 @@ right:30pt;
     content: "";
     display: block;
     height: 2px;
-    left: 4.8%;
+    left: 4.9%;
     position: absolute;
     background: white;
     transition: width 0.3s 0s, left 0.3s 0s;
@@ -49,7 +49,7 @@ right:30pt;
 }
 :hover:after {
     width: 89%;
-    left: 4.8%;
+    left: 4.9%;
 }
 `;
 
