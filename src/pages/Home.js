@@ -142,7 +142,7 @@ const Home = () => {
                     <Intro>
                         <IntroTop>
                             <IntroBody className="big-text">
-                                <p class="fadeIn1">Hi, my name is <Link href="https://www.linkedin.com/in/akselr/"><Span>Aksel</Span></Link>.<br/> I'm a Frontend Developer.</p>
+                                <p class="fadeIn1">Hi, my name is <Link href="https://www.linkedin.com/in/akselr/"><Span>Aksel</Span></Link>.<br/> I'm a Web Developer.</p>
                             </IntroBody>
                             <div className="Art fadeIn2">
                                 <div style={shadow} class="circle1"></div>
@@ -153,7 +153,7 @@ const Home = () => {
                             </div>
                         </IntroTop>
                         <IntroBottom>
-                            <a href="#projects">
+                            <a href="/#projects">
                                 <IntroAnchor className="fadeIn3">
                                     <Image src={Arrow}></Image>
                                 </IntroAnchor>
