@@ -11,6 +11,25 @@ html {
   scroll-behavior: smooth;
 }
 
+a:link {
+  color:#00B4D8;
+}
+
+a:visited {
+  color:#00B4D8;
+}
+
+.github-link{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.github-img{
+  width: 20px;
+  margin-right:10px;
+}
+
 .fill {
   border: 2px solid #f7f7f7;
   text-align: center;

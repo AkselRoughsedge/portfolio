@@ -26,7 +26,7 @@ position:absolute;
 background-color:${props=>props.bgcolor ? props.bgcolor : "white"};
 text-align:center;
 width:100%;
-height:170pt;
+height:180pt;
 left:0;
 @media (max-width: 1300px) {
   padding-top:100pt;
@@ -105,13 +105,14 @@ padding-right:50pt;
 
 
 
-const Project = ({ title, subTitle1, subTitle2, bgcolor, para1, img1, para2, img2, list }) => {
+const Project = ({ title, subTitle1, subTitle2, subTitle3, bgcolor, para1, img1, para2, img2, list }) => {
     return (
                 <Content>
                     <WorkTitle bgcolor={bgcolor}>
                         <TitleText className="big-text">{title}</TitleText>
                         <SubTitleText className="small-text">{subTitle1}</SubTitleText>
                         <SubTitleText className="small-text">{subTitle2}</SubTitleText>
+                        <SubTitleText className="small-text">{subTitle3}</SubTitleText>
                     </WorkTitle>
                     <Body>
                         <Intro data-aos="fade-up" data-aos-duration="1000">

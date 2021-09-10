@@ -4,6 +4,7 @@ import NavBar from '../comps/NavBarNoot';
 
 import Img1 from "../Images/Noot/bulletin.png";
 import Img2 from '../Images/Noot/health-check.png'
+import Github from '../Images/github.png';
 
 import Project from '../comps/Project';
 
