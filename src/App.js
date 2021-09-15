@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react';
 
 import Home from '../src/pages/Home';
 import ShowTracker from '../src/pages/ShowTracker';
@@ -8,6 +9,9 @@ import Lightbulb from '../src/pages/Lightbulb';
 
 import ScrollToTop from './comps/ScrollToTop';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,7 +19,14 @@ import {
   Link
 } from "react-router-dom";
 
+
 function App() {
+  useEffect(()=>{
+    AOS.init({
+        duration : 2000
+      });
+},[])
+
   return (
 <Router>
   <ScrollToTop></ScrollToTop>
