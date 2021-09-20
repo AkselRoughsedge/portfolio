@@ -142,7 +142,7 @@ const Home = () => {
                     <Intro>
                         <IntroTop>
                             <IntroBody className="big-text">
-                                <p class="fadeIn1">Hi, my name is <Link href="https://www.linkedin.com/in/akselr/"><Span>Aksel</Span></Link>.<br/> I'm a Web Developer.</p>
+                                <p class="fadeIn1">Hi, my name is <Link href="https://www.linkedin.com/in/akselr/"><Span>Aksel</Span></Link>.<br/> I'm a Front-End Developer.</p>
                             </IntroBody>
                             <div className="Art fadeIn2">
                                 <div style={shadow} class="circle1"></div>
