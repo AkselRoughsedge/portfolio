@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import '../HomeCss.css';
 
-import NavBar from '../comps/NavBarHome';
-import Button from '../comps/Button';
+import NavBar from '../comps/NavBar';
 import PortfolioItem from '../comps/PortfolioItem';
 import Arrow from '../Images/arrow.svg';
+import Me from '../Images/circleme.png';
+import Github from '../Images/github.png';
+import LinkedIn from '../Images/linkedin.png';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from '../comps/Footer';
 
 const Page = styled.div`
 display:flex;
@@ -80,7 +83,7 @@ const WorkContent = styled.div`
 padding-top:25pt;
 display:flex;
 align-items:center;
-justify-content:space-between;
+justify-content:space-around;
 @media (max-width: 1200px) {
     padding-top:0pt;
     flex-direction:column;
@@ -124,16 +127,33 @@ const Image = styled.img`
 height:25pt;
 `;
 
+const ProfileImg = styled.img`
+height:175pt;
+padding-left: 50pt;
+@media (max-width: 900px) {
+    padding-left:0pt;
+  }
+  `;
+
+const About = styled.div`
+display:flex;
+text-align:left;
+align-items:center;
+@media (max-width: 900px) {
+    flex-direction:column;
+  }
+`;
+
 const Home = () => {
     var shadow = {
         filter: "drop-shadow(0px 0px 15px rgba(0, 180, 216,0.2))"
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         AOS.init({
-            duration : 2000
-          });
-    },[])
+            duration: 2000
+        });
+    }, [])
 
     return (
         <div>
@@ -142,7 +162,7 @@ const Home = () => {
                     <Intro>
                         <IntroTop>
                             <IntroBody className="big-text">
-                                <p class="fadeIn1">Hi, my name is <Link href="https://www.linkedin.com/in/akselr/"><Span>Aksel</Span></Link>.<br/> I'm a Front-End Developer.</p>
+                                <p class="fadeIn1">Hi, my name is <Link href="https://www.linkedin.com/in/akselr/"><Span>Aksel</Span></Link>.<br /> I'm a Front-End Developer.</p>
                             </IntroBody>
                             <div className="Art fadeIn2">
                                 <div style={shadow} class="circle1"></div>
@@ -153,26 +173,38 @@ const Home = () => {
                             </div>
                         </IntroTop>
                         <IntroBottom>
-                            <a href="/#projects">
+                            <a href="/#aboutme">
                                 <IntroAnchor className="fadeIn3">
                                     <Image src={Arrow}></Image>
                                 </IntroAnchor>
                             </a>
                         </IntroBottom>
                     </Intro>
+                    <WorkTitle id="aboutme">
+                        <About data-aos="fade-up" data-aos-duration="1000">
+                            <div>
+                                <p className="big-text">About me</p>
+                                <p className="normal-text">A Front-End Developer with a drive for creating innovative, high-quality products. Experienced with web/app development, and working in team projects. Dedicated and always eager to learn more.</p>
+                                <a href="https://github.com/AkselRoughsedge" target="_blank" rel="noreferrer"><img alt="GitHub Icon" className="github-img-big" src={Github}></img></a>
+                                <a href="https://www.linkedin.com/in/akselr/" target="_blank" rel="noreferrer"><img alt="LinkedIn Icon" className="github-img-big" src={LinkedIn}></img></a>
+                            </div>
+                            <ProfileImg src={Me}></ProfileImg>
+                        </About>
+                    </WorkTitle>
                     <Work>
-                            <WorkTitle id="projects" className="big-text" data-aos="fade-up" data-aos-duration="1000">
-                                <p>Projects</p>
-                            </WorkTitle>
-                            <WorkContent>
-                                <PortfolioItem link="/noot" title="Noot" text="A back-to-school app designed to help children return to school during the pandemic."></PortfolioItem>
-                                <PortfolioItem link="/show-tracker" title="Show Tracker" text="An app for keeping track of what movies and TV shows you've seen."></PortfolioItem>
-                                <PortfolioItem link="/lightbulb" title="Lightbulb"  text="A social media app catered to developers and designers."></PortfolioItem>
-                            </WorkContent>
+                        <WorkTitle id="projects" className="big-text" data-aos="fade-up" data-aos-duration="1000">
+                            <p>My Work</p>
+                        </WorkTitle>
+                        <WorkContent>
+                            <PortfolioItem link="/modern-kibble" title="Modern Kibble" text="A website for ordering organic pet food straight to your door."></PortfolioItem>
+                            <PortfolioItem link="/secure-hive" title="Secure Hive" text="The work I completed during my internship at a security company."></PortfolioItem>
+                            <PortfolioItem link="/bcit" title="BCIT Projects" text="A couple of the projects I worked on while at BCIT."></PortfolioItem>
+                        </WorkContent>
                     </Work>
                 </Content>
-                <NavBar></NavBar>
+                <NavBar header1="header1" header2="header2" color="#222326"></NavBar>
             </Page>
+            <Footer></Footer>
         </div>
     )
 }

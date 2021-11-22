@@ -3,10 +3,8 @@ import styled from 'styled-components';
 
 import Button from '../Button';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 const Cont = styled.div`
+padding:20pt;
 width:300pt;
 @media (max-width: 1770px) {
     width:280pt;

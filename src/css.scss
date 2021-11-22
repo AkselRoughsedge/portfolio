@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -26,8 +28,13 @@ a:visited {
 }
 
 .github-img{
-  width: 20px;
+  width: 25px;
   margin-right:10px;
+}
+
+.github-img-big{
+  width:50px;
+  padding-right:20pt;
 }
 
 .fill {
@@ -81,6 +88,14 @@ a:visited {
   }
 }
 
+.normal-text {
+  font-size: 18pt;
+  line-height: 30pt;
+  @media (max-width: 800px) {
+    font-size: 16pt;
+  }
+}
+
 .small-text {
   font-size: 14pt;
   @media (max-width: 800px) {
@@ -89,7 +104,8 @@ a:visited {
 }
 
 //HOME NAVBAR
-.navbarHome {
+
+.header1 {
   width:100%;
   height:70pt;
   position:fixed;
@@ -97,14 +113,20 @@ a:visited {
   justify-content:center;
   background-color: #2A2B2E;
   transition: 0.4s;
-}
+  }
 
-.scrollHome {
-  background-color: #222326;
-}
+  .header2 {
+    width:100%;
+    height:70pt;
+    position:fixed;
+    display:flex;
+    justify-content:center;
+    background-color: #222326;
+    transition: 0.4s;
+  }
 
 //NOOT NAVBAR
-.navbarNoot {
+.header1Noot {
   width:100%;
   height:70pt;
   position:fixed;
@@ -114,12 +136,18 @@ a:visited {
   transition: 0.4s;
 }
 
-.scrollNoot {
+.header2Noot {
+  width:100%;
+  height:70pt;
+  position:fixed;
+  display:flex;
+  justify-content:center;
   background-color: #bf8c24;
+  transition: 0.4s;
 }
 
 //SHOW TRACKER NAVBAR
-.navbarShowTracker {
+.header1ShowTracker {
   width:100%;
   height:70pt;
   position:fixed;
@@ -129,12 +157,18 @@ a:visited {
   transition: 0.4s;
 }
 
-.scrollShowTracker {
+.header2ShowTracker {
+  width:100%;
+  height:70pt;
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  transition: 0.4s;
   background-color: #b04646;
 }
 
-//CHARITY DATABASE NAVBAR
-.navbarCharity {
+//LIGHTBULB NAVBAR
+.header1Lightbulb {
   width:100%;
   height:70pt;
   position:fixed;
@@ -144,8 +178,56 @@ a:visited {
   transition: 0.4s;
 }
 
-.scrollCharity {
+.header2Lightbulb {
+  width:100%;
+  height:70pt;
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  transition: 0.4s;
   background-color: #795cab;
+}
+
+//MODERN KIBBLE NAVBAR
+.header1Kibble {
+  width:100%;
+  height:70pt;
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  background-color: #6e655b;
+  transition: 0.4s;
+}
+
+.header2Kibble {
+  width:100%;
+  height:70pt;
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  transition: 0.4s;
+  background-color: #5c544c;
+}
+
+//SECURE HIVE NAVBAR
+.header1SecureHive {
+  width:100%;
+  height:70pt;
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  background-color: #263c5c;
+  transition: 0.4s;
+}
+
+.header2SecureHive {
+  width:100%;
+  height:70pt;
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  transition: 0.4s;
+  background-color: #1f324d;
 }
 
 .Art {

@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import NavBar from '../comps/NavBarNoot';
+import NavBar from '../comps/NavBar';
 
 import Img1 from "../Images/Noot/bulletin.png";
 import Img2 from '../Images/Noot/health-check.png'
-import Github from '../Images/github.png';
 
 import Project from '../comps/Project';
 
@@ -29,11 +28,9 @@ const Noot = () => {
            img2={Img2}
            list={[<li>React Native</li>,<li>React Navigation</li>, <li>Axios API</li>, <li>Lottie Animations</li>]}
            />
-           <NavBar></NavBar>
+           <NavBar header1="header1Noot" header2="header2Noot" color="#bf8c24"></NavBar>
         </Page>
     )
 }
 
 export default Noot;
-
-// linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.9)) , 

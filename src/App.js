@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import Home from '../src/pages/Home';
 import ShowTracker from '../src/pages/ShowTracker';
 import Noot from '../src/pages/Noot';
 import Lightbulb from '../src/pages/Lightbulb';
+import Kibble from './pages/ModernKibble';
+import SecureHive from './pages/SecureHive';
+import BCIT from './pages/BCIT';
 
 import ScrollToTop from './comps/ScrollToTop';
 
@@ -15,8 +17,7 @@ import "aos/dist/aos.css";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
@@ -42,6 +43,15 @@ function App() {
     </Route>
     <Route exact path="/show-tracker">
       <ShowTracker></ShowTracker>
+    </Route>
+    <Route exact path="/modern-kibble">
+      <Kibble></Kibble>
+    </Route>
+    <Route exact path="/secure-hive">
+      <SecureHive></SecureHive>
+    </Route>
+    <Route exact path="/bcit">
+      <BCIT></BCIT>
     </Route>
   </Switch>
 </Router>

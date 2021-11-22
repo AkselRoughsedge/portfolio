@@ -67,7 +67,7 @@ const Span2 = styled.span`
     width: 0;
 }
 :hover:after {
-    width: 24.5%;
+    width: 70%;
     left: 8.8%;
 }
 `;
@@ -86,7 +86,7 @@ const Span3 = styled.span`
     width: 0;
 }
 :hover:after {
-    width: 62%;
+    width: 56%;
     left: 8.8%;
 }
 `;
@@ -105,7 +105,7 @@ const Span4 = styled.span`
     width: 0;
 }
 :hover:after {
-    width: 44%;
+    width: 65%;
     left: 8.8%;
 }
 `;
@@ -140,14 +140,14 @@ height:20pt;
 transform:${props=>props.rotate ? props.rotate : "rotate(180deg)"};
 `;
 
-const Dropdown = ({ display, color }) => {
+const Dropdown = ({ color }) => {
 
     const [myDropdown, setDropdown] = useState("none")
     const [myHeight, setHeight] = useState("0pt")
     const [myRotate, setRotate] = useState("rotate(180deg)")
 
     function HandleDropdown() {
-  if (myDropdown == "none") {
+  if (myDropdown === "none") {
     setRotate("rotate(0deg)")
     setDropdown("block")
     setTimeout(function(){ setHeight("105pt"); }, 1);
@@ -168,24 +168,24 @@ const Dropdown = ({ display, color }) => {
                 </Span1>
             </Portfolio>
             <Cont display={myDropdown} height={myHeight} color={color}>
-                <Link to={"/noot"} style={{ textDecoration: 'none' }}>
+                <Link to={"/modern-kibble"} style={{ textDecoration: 'none' }}>
                 <Span2>
                     <Text>
-                        Noot
+                        Modern Kibble
                     </Text>
                 </Span2>
                 </Link>
-                <Link to={"/show-tracker"} style={{ textDecoration: 'none' }}>
+                <Link to={"/secure-hive"} style={{ textDecoration: 'none' }}>
                 <Span3>
                     <Text>
-                        Show Tracker
+                        Secure Hive
                     </Text>
                 </Span3>
                 </Link>
-                <Link to={"/lightbulb"} style={{ textDecoration: 'none' }}>
+                <Link to={"/bcit"} style={{ textDecoration: 'none' }}>
                 <Span4>
                     <Text>
-                        Lightbulb
+                        BCIT Projects
                     </Text>
                 </Span4>
                 </Link>
