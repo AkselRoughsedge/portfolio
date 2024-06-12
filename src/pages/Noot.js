@@ -6,7 +6,6 @@ import Img1 from "../Images/Noot/bulletin.png";
 import Img2 from '../Images/Noot/health-check.png'
 
 import Project from '../comps/Project';
-import Button from '../comps/Button';
 
 const Page = styled.div`
 display:flex;
