@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const TitleText = styled.p`
-color:white;
+const TitleText = styled.h1`
 margin-top:10pt;
 margin-bottom:30pt;
 `;
 
-const SubTitleText = styled.p`
-color:white;
+const SubTitleText = styled.h3`
 margin-top:10pt;
 margin-bottom:0;
 `;
@@ -26,7 +24,7 @@ position:absolute;
 background-color:${props => props.bgcolor ? props.bgcolor : "white"};
 text-align:center;
 width:100%;
-height:180pt;
+height:200pt;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -60,7 +58,7 @@ display:flex;
   }
 `;
 
-const IntroTitle = styled.p`
+const IntroTitle = styled.h3`
 margin-top:0;
 `;
 
@@ -131,21 +129,22 @@ display:block;
 }
 `;
 
-const Project = ({ title, subTitle1, subTitle2, subTitle3, bgcolor, para1, img1, para2, img2, list, imgDirection, padding, imgHeight, Section1, Section2, Section3, img3, para3, displayPara3 }) => {
+const Project = ({ title, subTitle1, subTitle2, subTitle3, bgcolor, para1, img1, para2, 
+  img2, list, imgDirection, padding, imgHeight, Section1, Section2, Section3, img3, para3, displayPara3 }) => {
   return (
     <Content>
       <WorkTitle bgcolor={bgcolor}>
-        <TitleText className="big-text">{title}</TitleText>
-        <SubTitleText className="small-text">{subTitle1}</SubTitleText>
-        <SubTitleText className="small-text">{subTitle2}</SubTitleText>
+        <TitleText className="h1-w-montserrat">{title}</TitleText>
+        <SubTitleText className="h3-w-montserrat">{subTitle1}</SubTitleText>
+        <SubTitleText className="h3-w-montserrat">{subTitle2}</SubTitleText>
         <div style={{marginTop:"10pt"}} className="small-text">{subTitle3}</div>
       </WorkTitle>
       <Body>
         <Intro data-aos="fade-up" data-aos-duration="1000">
           <IntroFlex>
             <div>
-              <IntroTitle className="medium-text">{Section1}</IntroTitle>
-              <ParagraphLeft><p style={{ marginTop: 0 }}>{para1}</p></ParagraphLeft>
+              <IntroTitle className="h3-b-montserrat">{Section1}</IntroTitle>
+              <ParagraphLeft><p className="p-b-opensans" style={{ marginTop: "16px" }}>{para1}</p></ParagraphLeft>
             </div>
             <DisplayBoth imgDirection={imgDirection}>
               <ImageRight padding={padding} imgHeight={imgHeight} src={img1}></ImageRight>
@@ -161,24 +160,24 @@ const Project = ({ title, subTitle1, subTitle2, subTitle3, bgcolor, para1, img1,
               <TempImageLeft padding={padding} imgHeight={imgHeight} src={img2}></TempImageLeft>
             </HideImg2>
             <div>
-              <IntroTitle className="medium-text">{Section2}</IntroTitle>
-              <ParagraphRight><p style={{ marginTop: 0 }}>{para2}</p></ParagraphRight>
+              <IntroTitle className="h3-b-montserrat">{Section2}</IntroTitle>
+              <ParagraphRight><p className="p-b-opensans" style={{ marginTop: "16px" }}>{para2}</p></ParagraphRight>
             </div>
           </IntroFlex>
         </Intro>
         <IntroAdditional displayPara3={displayPara3} data-aos="fade-up" data-aos-duration="1000">
           <IntroFlex>
             <div>
-              <IntroTitle className="medium-text">{Section3}</IntroTitle>
-              <ParagraphLeft><p style={{ marginTop: 0 }}>{para3}</p></ParagraphLeft>
+              <IntroTitle className="h3-b-montserrat">{Section3}</IntroTitle>
+              <ParagraphLeft><p className="p-b-opensans" style={{ marginTop: "16px" }}>{para3}</p></ParagraphLeft>
             </div>
               <ImageRight padding={padding} imgHeight={imgHeight} src={img3}></ImageRight>
           </IntroFlex>
         </IntroAdditional>
         <Main data-aos="fade-up" data-aos-duration="1000">
-          <IntroTitle className="medium-text">Tools Used</IntroTitle>
-          <ParagraphLeft>
-            <ul style={{ marginTop: 0 }}>
+          <IntroTitle className="h3-b-montserrat">Tools Used</IntroTitle>
+          <ParagraphLeft className="p-b-opensans">
+            <ul style={{ marginTop: "16px" }}>
               {list}
             </ul>
           </ParagraphLeft>

@@ -9,8 +9,7 @@ import {
 
 
 const Container = styled.div`
-display:flex;
-
+display:"flex";
 `;
 
 const Cont = styled.div`
@@ -21,7 +20,7 @@ top:70pt;
 height:${props=>props.height ? props.height : "0pt"};
 transition:0.3s;
 width:113pt;
-background-color:${props=>props.color ? props.color : "#222326"};
+background-color:${props=>props.color ? props.color : "#191e2c"};
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -30,10 +29,11 @@ display:${props=>props.display ? props.display : "none"};
 
 const Span1 = styled.span`
 position:relative;
+
 color:White;
 cursor: pointer;
 padding:5pt;
-padding-right:30pt;
+
 right:30pt;
 
 :after {
@@ -48,7 +48,7 @@ right:30pt;
     width: 0;
 }
 :hover:after {
-    width: 89%;
+    width: 120%;
     left: 4.9%;
 }
 `;
@@ -67,7 +67,7 @@ const Span2 = styled.span`
     width: 0;
 }
 :hover:after {
-    width: 70%;
+    width: 48%;
     left: 8.8%;
 }
 `;
@@ -105,14 +105,13 @@ const Span4 = styled.span`
     width: 0;
 }
 :hover:after {
-    width: 65%;
+    width: 68%;
     left: 8.8%;
 }
 `;
 
 const Portfolio = styled.div`
-font-size:22px;
-width:70pt;
+width:100%;
 height:70pt;
 display:flex;
 align-items:center;
@@ -160,18 +159,18 @@ const Dropdown = ({ color }) => {
 
     return (
         <Container>
-            <Portfolio>
+            <Portfolio className='h3-w-montserrat'>
                 <Arrow rotate={myRotate} src={arrow}>
                 </Arrow>
                 <Span1 onClick={HandleDropdown}>
-                    PROJECTS
+                    My Work
                 </Span1>
             </Portfolio>
             <Cont display={myDropdown} height={myHeight} color={color}>
-                <Link to={"/modern-kibble"} style={{ textDecoration: 'none' }}>
+                <Link to={"/stayshure"} style={{ textDecoration: 'none' }}>
                 <Span2>
                     <Text>
-                        Modern Kibble
+                        Stayshure
                     </Text>
                 </Span2>
                 </Link>
@@ -185,7 +184,7 @@ const Dropdown = ({ color }) => {
                 <Link to={"/bcit"} style={{ textDecoration: 'none' }}>
                 <Span4>
                     <Text>
-                        BCIT Projects
+                        Older Projects
                     </Text>
                 </Span4>
                 </Link>

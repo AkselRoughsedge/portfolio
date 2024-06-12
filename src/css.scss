@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+// Style guide
+
+// Background: #202638
+// Secondary: #191e2c
+// Primary: #2e3751
+// Blue: #00B4D8;
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -42,6 +47,7 @@ a:visited {
   text-align: center;
   overflow: hidden;
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 
   transition: .3s;
   &:after {
@@ -53,7 +59,7 @@ a:visited {
     background: #f7f7f7;
     height: 100%;
     left: -10%;
-    z-index: -2;
+    z-index: -1;
   }
   &:hover {
     color: #222326;
@@ -61,6 +67,7 @@ a:visited {
     &:after {
       left: -10%;
       width: 120%;
+
     }
   }
 }
@@ -72,6 +79,108 @@ a:visited {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+}
+
+.h1-w-montserrat {
+  color: white;
+  font-size: 64px;
+  font-family: 'Montserrat', sans-serif;
+  @media (max-width: 800px) {
+    font-size:40px;
+  }
+}
+
+.h1-b-montserrat {
+  color: black;
+  font-size: 64px;
+  font-family: 'Montserrat', sans-serif;
+  @media (max-width: 800px) {
+    font-size:40px;
+  }
+}
+
+.h2-w-montserrat {
+  color: white;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  @media (max-width: 800px) {
+    font-size:24px;
+  }
+}
+
+.h2-b-montserrat {
+  color: black;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  @media (max-width: 800px) {
+    font-size:24px;
+  }
+}
+
+.h3-w-montserrat {
+  color: white;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  @media (max-width: 800px) {
+    font-size:22px;
+  }
+}
+
+.h3-b-montserrat {
+  color: black;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  @media (max-width: 800px) {
+    font-size:22px;
+  }
+}
+
+.p-w-opensans {
+  color: white;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.p-b-opensans {
+  color: black;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.small-w-opensans {
+  color: white;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.small-b-opensans {
+  color: black;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 .big-text {
@@ -106,128 +215,57 @@ a:visited {
 //HOME NAVBAR
 
 .header1 {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  background-color: #2A2B2E;
-  transition: 0.4s;
+  background-color: none;
   }
 
   .header2 {
-    width:100%;
-    height:70pt;
-    position:fixed;
-    display:flex;
-    justify-content:center;
-    background-color: #222326;
-    transition: 0.4s;
+    background-color: #191e2c;
   }
 
 //NOOT NAVBAR
 .header1Noot {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  background-color: #d49b28;
-  transition: 0.4s;
+  background-color: none;
 }
 
 .header2Noot {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  background-color: #bf8c24;
-  transition: 0.4s;
+  background-color: #191e2c;
 }
 
 //SHOW TRACKER NAVBAR
 .header1ShowTracker {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  background-color: #c24e4e;
-  transition: 0.4s;
+  background-color: none;
 }
 
 .header2ShowTracker {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  transition: 0.4s;
-  background-color: #b04646;
+  background-color: #191e2c;
 }
 
 //LIGHTBULB NAVBAR
 .header1Lightbulb {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  background-color: #8867bf;
-  transition: 0.4s;
+  background-color: none;
 }
 
 .header2Lightbulb {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  transition: 0.4s;
-  background-color: #795cab;
+  background-color: #191e2c;
 }
 
 //MODERN KIBBLE NAVBAR
 .header1Kibble {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  background-color: #6e655b;
+  background-color: none;
   transition: 0.4s;
 }
 
 .header2Kibble {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  transition: 0.4s;
-  background-color: #5c544c;
+  background-color: #191e2c;
 }
 
 //SECURE HIVE NAVBAR
 .header1SecureHive {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  background-color: #263c5c;
-  transition: 0.4s;
+  background-color: none;
 }
 
 .header2SecureHive {
-  width:100%;
-  height:70pt;
-  position:fixed;
-  display:flex;
-  justify-content:center;
-  transition: 0.4s;
-  background-color: #1f324d;
+  background-color: #191e2c;
 }
 
 .Art {
@@ -254,20 +292,20 @@ a:visited {
 @media (prefers-reduced-motion: no-preference) {
   .fadeIn1 {
     animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: both;
   }
   .fadeIn2 {
     animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
   }
   .fadeIn3 {
     animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-delay: 3.5s;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
     animation-fill-mode: both;
   }
     .circle1 {

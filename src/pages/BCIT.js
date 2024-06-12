@@ -8,7 +8,7 @@ import Footer from '../comps/Footer';
 const Page = styled.div`
 display:flex;
 justify-content:center;
-background-color:#2A2B2E;
+background-color:#202638;
 `;
 
 const Content = styled.div`
@@ -51,7 +51,7 @@ const BCIT = () => {
             <Content>
                 <Work>
                     <WorkTitle id="projects" className="big-text" data-aos="fade-up" data-aos-duration="1000">
-                        <p style={{margin:"0"}}>BCIT Projects</p>
+                        <p style={{margin:"0"}}>Older Projects</p>
                         <p className="small-text">Here are a few of the projects I completed while in the Digital Design and Development program at BCIT.</p>
                         <hr></hr>
                     </WorkTitle>
@@ -62,9 +62,9 @@ const BCIT = () => {
                     </WorkContent>
                 </Work>
             </Content>
-            <NavBar header1="header1" header2="header2" color="#222326"></NavBar>
+            <NavBar header1="header1" header2="header2" color="#191e2c"></NavBar>
         </Page>
-        <Footer></Footer>
+        <Footer display={"none"}></Footer>
 </div>
     )
 }

@@ -19,10 +19,10 @@ const Lightbulb = () => {
     return (
         <Page>
            <Project 
-            bgcolor="#8867bf" 
+            bgcolor="#202638" 
             title="Lightbulb"
-            subTitle1={[<strong>Client:</strong>, " BCIT"]}
-            subTitle2={[<strong>Role:</strong>, " Front-End Developer"]}
+            subTitle1={["BCIT"]}
+            subTitle2={["Front-End Developer"]}
             subTitle3={[<div className="github-link"><img alt="GitHub Icon" className="github-img" src={Github}></img><a color="white" href="https://github.com/LuuDavid778/lightbulb" target="_blank" rel="noreferrer">GitHub Link</a></div>]}
             para1={["We were instructed to create a social media app as one of our final projects at BCIT. Three teammates and I decided to create a platform specifically for developers and designers to thrive. Here they can share their projects with each other, post questions, or just talk about whatever they want.",<br/>,<br/>,"Users can create an account to make posts on the app. They can enter a title, description, image, and select a category for the post to be in."]}
             img1={Img1}
@@ -39,7 +39,7 @@ const Lightbulb = () => {
             <li>MySQL Workbench</li>
          ]}
            ></Project>
-           <NavBar header1="header1Lightbulb" header2="header2Lightbulb" color="#795cab"></NavBar>
+           <NavBar header1="header1Lightbulb" header2="header2Lightbulb" color="#191e2c"></NavBar>
         </Page>
     )
 }

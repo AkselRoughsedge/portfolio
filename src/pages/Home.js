@@ -8,6 +8,7 @@ import Arrow from '../Images/arrow.svg';
 import Me from '../Images/circleme.png';
 import Github from '../Images/github.png';
 import LinkedIn from '../Images/linkedin.png';
+import Email from '../Images/email.png';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,7 +17,7 @@ import Footer from '../comps/Footer';
 const Page = styled.div`
 display:flex;
 justify-content:center;
-background-color:#2A2B2E;
+background-color:#202638;
 `;
 
 const Content = styled.div`
@@ -65,9 +66,9 @@ color:white;
 `;
 
 const Work = styled.div`
-height:100vh;
+height:80vh;
 @media (max-width: 1200px) {
-height:1100pt;
+height:850pt;
   }
 `;
 
@@ -85,7 +86,7 @@ display:flex;
 align-items:center;
 justify-content:space-around;
 @media (max-width: 1200px) {
-    padding-top:0pt;
+    padding-top:0px;
     flex-direction:column;
   }
 `;
@@ -162,7 +163,8 @@ const Home = () => {
                     <Intro>
                         <IntroTop>
                             <IntroBody className="big-text">
-                                <p class="fadeIn1">Hi, my name is <Link href="https://www.linkedin.com/in/akselr/"><Span>Aksel</Span></Link>.<br /> I'm a Front-End Developer.</p>
+                                <h1 class="fadeIn1, h1-w-montserrat">Hi, my name is <Link href="https://www.linkedin.com/in/akselr/"><Span>Aksel</Span></Link>.<br /> I'm a Front-End Developer.</h1>
+                                <PortfolioItem link="/stayshure" ButtonMode={"0px"} External={"block"} Main={"none"} target={"_self"} width={"fit-content"} ExternalText={"My Work at Stayshure"}></PortfolioItem>
                             </IntroBody>
                             <div className="Art fadeIn2">
                                 <div style={shadow} class="circle1"></div>
@@ -183,28 +185,29 @@ const Home = () => {
                     <WorkTitle id="aboutme">
                         <About data-aos="fade-up" data-aos-duration="1000">
                             <div>
-                                <p className="big-text">About me</p>
-                                <p className="normal-text">A Front-End Developer with a drive for creating innovative, high-quality products. Experienced with web/app development, and working in team projects. Dedicated and always eager to learn more.</p>
+                                <h2 className="h2-w-montserrat" style={{marginBottom:'8px'}}>About me</h2>
+                                <p className="p-w-opensans" style={{marginBottom:'32px'}}>A Front-End Developer with a drive for creating innovative, high-quality products. Experienced with web/app development, and working in team projects. Dedicated and always eager to learn more.</p>
                                 <a href="https://github.com/AkselRoughsedge" target="_blank" rel="noreferrer"><img alt="GitHub Icon" className="github-img-big" src={Github}></img></a>
                                 <a href="https://www.linkedin.com/in/akselr/" target="_blank" rel="noreferrer"><img alt="LinkedIn Icon" className="github-img-big" src={LinkedIn}></img></a>
+                                <a href="mailto:roughsedge.a@gmail.com" target="_blank" rel="noreferrer"><img alt="Email Icon" className="github-img-big" src={Email}></img></a>
                             </div>
                             <ProfileImg src={Me}></ProfileImg>
                         </About>
                     </WorkTitle>
                     <Work>
                         <WorkTitle id="projects" className="big-text" data-aos="fade-up" data-aos-duration="1000">
-                            <p>My Work</p>
+                            <h2 className='h2-w-montserrat'>My Work</h2>
                         </WorkTitle>
                         <WorkContent>
-                            <PortfolioItem link="/modern-kibble" title="Modern Kibble" text="A website for ordering organic pet food straight to your door."></PortfolioItem>
-                            <PortfolioItem link="/secure-hive" title="Secure Hive" text="The work I completed during my internship at a security company."></PortfolioItem>
-                            <PortfolioItem link="/bcit" title="BCIT Projects" text="A couple of the projects I worked on while at BCIT."></PortfolioItem>
+                            <PortfolioItem link="/stayshure" title="Stayshure" text="A website for ordering organic pet food straight to your door."></PortfolioItem>
+                            <PortfolioItem link="/secure-hive" title="Secure Hive" text="The work I completed during my internship at a tech security company."></PortfolioItem>
+                            <PortfolioItem link="/bcit" title="Older Projects" text="A couple of the projects I worked on while at BCIT."></PortfolioItem>
                         </WorkContent>
                     </Work>
                 </Content>
-                <NavBar header1="header1" header2="header2" color="#222326"></NavBar>
+                <NavBar header1="header1" header2="header2" color="#191e2c"></NavBar>
             </Page>
-            <Footer></Footer>
+            <Footer display={"none"}></Footer>
         </div>
     )
 }

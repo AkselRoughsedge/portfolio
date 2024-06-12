@@ -2,41 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Button from '../Button';
+import ButtonExternal from '../ButtonExternal';
 
 const Cont = styled.div`
-padding:20pt;
-width:300pt;
-@media (max-width: 1770px) {
-    width:280pt;
-  }
-  @media (max-width: 1670px) {
-    width:260pt;
-  }
-@media (max-width: 1570px) {
-    width:240pt;
-  }
-  @media (max-width: 1450px) {
-    width:220pt;
-  }
-  @media (max-width: 1320px) {
-    width:200pt;
-  }
+background-color:none;
+padding:${props=>props.hide ? props.hide : "20pt"};
+width:${props=>props.width ? props.width : "300pt"};
   @media (max-width: 1200px) {
-    width:100%;
-    margin-bottom:80pt;
-  }
-  @media (max-width: 900px) {
     width:90%;
-    margin-bottom:100pt;
   }
 `;
 
 const Title = styled.div`
-font-family: 'Lato', sans-serif;
-color:white;
-font-size:28px;
 text-align:center;
-padding-bottom:20pt;
+padding-bottom:${props=>props.hide ? props.hide : "20pt"};
 `;
 
 const Body = styled.div`
@@ -56,20 +35,24 @@ text-align:center;
 `;
 
 const Text = styled.p`
-margin-bottom:20px;
+margin-bottom:${props=>props.hide ? props.hide : "20px"};
 height:50pt;
+
+margin-top:0px;
+height:${props=>props.hide ? props.hide : "50pt"};
 `;
 
-const PortfolioItem = ({ text, title, link }) => {
+const PortfolioItem = ({ text, title, link, ButtonMode, External, Main, width, ExternalText, target }) => {
     return (
-        <Cont data-aos="fade-up" data-aos-duration="1000">
-            <Title>
+        <Cont data-aos="fade-up" data-aos-duration="1000" hide={ButtonMode} width={width}>
+            <Title className='h3-w-montserrat' hide={ButtonMode}>
                 {title}
             </Title>
             <Body>
                 <Content>
-                    <Text>{text}</Text>
-                    <Button width="150pt" link={link} text="LEARN MORE"></Button>
+                    <Text className='p-w-opensans' hide={ButtonMode}>{text}</Text>
+                    <Button link={link} text="Learn More" hide={Main}></Button>
+                    <ButtonExternal target={target} hide={External} link={link} text={ExternalText}></ButtonExternal>
                 </Content>
             </Body>
         </Cont>
@@ -77,8 +60,9 @@ const PortfolioItem = ({ text, title, link }) => {
 }
 
 PortfolioItem.defaultProps = {
-    title:"default title",
-    text: "default text"
+    title:"",
+    text: "",
+    target: "_blank"
 }
 
 export default PortfolioItem;

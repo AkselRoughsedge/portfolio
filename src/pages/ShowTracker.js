@@ -11,7 +11,7 @@ import Project from '../comps/Project';
 const Page = styled.div`
 display:flex;
 justify-content:center;
-background-color:##f5f6fa;
+background-color:#f5f6fa;
 `;
 
 const ShowTracker = () => {
@@ -19,10 +19,10 @@ const ShowTracker = () => {
     return (
         <Page>
            <Project
-           bgcolor="#c24e4e"
+           bgcolor="#202638"
            title="Show Tracker"
-           subTitle1={[<strong>Client:</strong>, " BCIT"]}
-           subTitle2={[<strong>Role:</strong>, " Lead Front-End Developer"]}
+           subTitle1={"BCIT"}
+           subTitle2={"Lead Front-End Developer"}
            subTitle3={[<div className="github-link"><img alt="GitHub Icon" className="github-img" src={Github}></img><a color="white" href="https://github.com/sylviaah/netflixnchill-front-end" target="_blank" rel="noreferrer">GitHub Link</a></div>]}
            para1={["In my final semester at BCIT, we were instructed to create an app that allows the user to keep track of data they have entered. My teammates and I decided to create an app for tracking TV shows and movies you have seen.",<br/>,<br/>,"The user is able to enter their own title, description, and image when adding a show. They can also choose if it's a show they're currently watching, planning to watch, or completed in the past."]}
            img1={Img1}
@@ -38,7 +38,7 @@ const ShowTracker = () => {
            <li>MySQL Workbench</li>
         ]}
            ></Project>
-           <NavBar header1="header1ShowTracker" header2="header2ShowTracker" color="#b04646"></NavBar>
+           <NavBar header1="header1ShowTracker" header2="header2ShowTracker" color="#191e2c"></NavBar>
         </Page>
     )
 }

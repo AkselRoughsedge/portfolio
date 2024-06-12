@@ -8,6 +8,8 @@ import Lightbulb from '../src/pages/Lightbulb';
 import Kibble from './pages/ModernKibble';
 import SecureHive from './pages/SecureHive';
 import BCIT from './pages/BCIT';
+import Stayshure from './pages/Stayshure';
+import Footprint from './pages/0FootPrint';
 
 import ScrollToTop from './comps/ScrollToTop';
 
@@ -52,6 +54,12 @@ function App() {
     </Route>
     <Route exact path="/bcit">
       <BCIT></BCIT>
+    </Route>
+    <Route exact path="/stayshure">
+      <Stayshure></Stayshure>
+    </Route>
+    <Route exact path="/0footprint">
+      <Footprint></Footprint>
     </Route>
   </Switch>
 </Router>

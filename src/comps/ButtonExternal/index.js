@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {Link} from "react-router-dom";
-
 const LogoBox = styled.span`
 padding-top:5pt;
 padding-bottom:5pt;
@@ -22,25 +20,26 @@ align-items:center;
 const Cont = styled.div`
 display:flex;
 align-items:center;
-display: ${props=>props.hide ? props.hide : "block"};
+display: ${props=>props.hide ? props.hide : "none"};
 `;
 
-const Button = ({ text, width, link, hide }) => {
+const ButtonExternal = ({ text, width, link, hide, target }) => {
     return (
         <Cont hide={hide}>
-        <Link to={link} style={{ textDecoration: 'none' }}>
+        <a href={link} target={target} rel="noreferrer" style={{ textDecoration: 'none' }}>
     <LogoCont width={width}>
         <LogoBox className="fill">
             {text}
         </LogoBox>
     </LogoCont>
-    </Link>
+    </a>
     </Cont>
     )
 }
 
-Button.defaultProps = {
-    text: "default text"
+ButtonExternal.defaultProps = {
+    text: "default text",
+    target: "blank_"
 }
 
-export default Button;
+export default ButtonExternal;

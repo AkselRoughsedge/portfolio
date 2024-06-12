@@ -26,10 +26,10 @@ const SecureHive = () => {
                 imgHeight="100%"
                 padding="20pt"
                 imgDirection="column"
-                bgcolor="#263c5c"
+                bgcolor="#202638"
                 title="Secure Hive Internship"
-                subTitle1={[<strong>Company:</strong>, " Secure Hive"]}
-                subTitle2={[<strong>Role:</strong>, " Front-End Developer"]}
+                subTitle1={"Secure Hive"}
+                subTitle2={"Front-End Developer"}
                 subTitle3={[<div className="github-link" style={{width:"300pt", justifyContent:"space-between"}}><a color="white" href="https://securehive.ca/" target="_blank" rel="noreferrer">Website Link</a><a href="https://hackerdetector.com/calculator" target="_blank" rel="noreferrer">Data Breach Calculator</a></div>]}
                 Section1="Introduction"
                 para1={["I had a three-month internship as a Front End Developer at a cyber-security company called Secure Hive, where I got to enhance my development and team work skills. I worked alongside developers and designers in a SCRUM framework where we created multiple webpages and a React Native app. I gained experience working through the design and development process of these products, and became accustomed to the weekly sprints that we would have."]}
@@ -48,7 +48,7 @@ const SecureHive = () => {
                     <li>Styled Components</li>
                 ]}
             ></Project>
-            <NavBar header1="header1SecureHive" header2="header2SecureHive" color="#1f324d"></NavBar>
+            <NavBar header1="header1SecureHive" header2="header2SecureHive" color="#191e2c"></NavBar>
         </Page>
     )
 }
