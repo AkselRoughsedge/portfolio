@@ -199,9 +199,9 @@ const Home = () => {
                             <h2 className='h2-w-montserrat'>My Work</h2>
                         </WorkTitle>
                         <WorkContent>
-                            <PortfolioItem link="/stayshure" title="Stayshure" text="A website for ordering organic pet food straight to your door."></PortfolioItem>
-                            <PortfolioItem link="/secure-hive" title="Secure Hive" text="The work I completed during my internship at a tech security company."></PortfolioItem>
-                            <PortfolioItem link="/bcit" title="Older Projects" text="A couple of the projects I worked on while at BCIT."></PortfolioItem>
+                            <PortfolioItem link="/stayshure" title="Stayshure" text="Senior Product Developer"></PortfolioItem>
+                            <PortfolioItem link="/0footprint" title="0Footprint" text="Front-end Developer"></PortfolioItem>
+                            <PortfolioItem link="/secure-hive" title="Secure Hive" text="Front-end Developer Intern"></PortfolioItem>
                         </WorkContent>
                     </Work>
                 </Content>

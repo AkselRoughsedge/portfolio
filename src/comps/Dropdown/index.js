@@ -56,7 +56,7 @@ right:30pt;
 const Span2 = styled.span`
 
 :after {
-    bottom:78pt;
+    top:30pt;
     content: "";
     display: block;
     height: 1px;
@@ -75,7 +75,7 @@ const Span2 = styled.span`
 const Span3 = styled.span`
 
 :after {
-    bottom:44pt;
+    top:62pt;
     content: "";
     display: block;
     height: 1px;
@@ -86,7 +86,7 @@ const Span3 = styled.span`
     width: 0;
 }
 :hover:after {
-    width: 56%;
+    width: 52%;
     left: 8.8%;
 }
 `;
@@ -94,7 +94,7 @@ const Span3 = styled.span`
 const Span4 = styled.span`
 
 :after {
-    bottom:9pt;
+    top:97pt;
     content: "";
     display: block;
     height: 1px;
@@ -105,7 +105,26 @@ const Span4 = styled.span`
     width: 0;
 }
 :hover:after {
-    width: 68%;
+    width: 57%;
+    left: 8.8%;
+}
+`;
+
+const Span5 = styled.span`
+
+:after {
+    top:132pt;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 8.8%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s 0s, left 0.3s 0s;
+    width: 0;
+}
+:hover:after {
+    width: 26%;
     left: 8.8%;
 }
 `;
@@ -149,7 +168,7 @@ const Dropdown = ({ color }) => {
   if (myDropdown === "none") {
     setRotate("rotate(0deg)")
     setDropdown("block")
-    setTimeout(function(){ setHeight("105pt"); }, 1);
+    setTimeout(function(){ setHeight("140pt"); }, 1);
   } else {
     setRotate("rotate(180deg)")
     setHeight("0pt")
@@ -174,19 +193,26 @@ const Dropdown = ({ color }) => {
                     </Text>
                 </Span2>
                 </Link>
-                <Link to={"/secure-hive"} style={{ textDecoration: 'none' }}>
+                <Link to={"/0footprint"} style={{ textDecoration: 'none' }}>
                 <Span3>
                     <Text>
-                        Secure Hive
+                        0Footprint
                     </Text>
                 </Span3>
                 </Link>
-                <Link to={"/bcit"} style={{ textDecoration: 'none' }}>
+                <Link to={"/secure-hive"} style={{ textDecoration: 'none' }}>
                 <Span4>
                     <Text>
-                        Older Projects
+                        Secure Hive
                     </Text>
                 </Span4>
+                </Link>
+                <Link to={"/bcit"} style={{ textDecoration: 'none' }}>
+                <Span5>
+                    <Text>
+                        BCIT
+                    </Text>
+                </Span5>
                 </Link>
             </Cont>
         </Container>

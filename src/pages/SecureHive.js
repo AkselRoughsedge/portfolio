@@ -1,54 +1,70 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBar from '../comps/NavBar';
+import Job from '../comps/Job';
 
-import Img1 from '../Images/SecureHive/1.png';
-import Img2 from '../Images/SecureHive/2.png';
-import Img3 from '../Images/SecureHive/3.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-import Project from '../comps/Project';
+import Img_SecureHive_1 from '../Images/SecureHive/1.png';
+import Img_SecureHive_2 from '../Images/SecureHive/2.png';
+import Img_SecureHive_3 from '../Images/SecureHive/3.png';
 
 const Page = styled.div`
 display:flex;
 justify-content:center;
-background-color:#f5f6fa;
-`;
-
-const SmallText = styled.span`
-font-size:14px;
+background-color:#202638;
 `;
 
 const SecureHive = () => {
 
     return (
         <Page>
-            <Project
-                imgHeight="100%"
-                padding="20pt"
-                imgDirection="column"
-                bgcolor="#202638"
-                title="Secure Hive Internship"
-                subTitle1={"Secure Hive"}
-                subTitle2={"Front-End Developer"}
-                subTitle3={[<div className="github-link" style={{width:"300pt", justifyContent:"space-between"}}><a color="white" href="https://securehive.ca/" target="_blank" rel="noreferrer">Website Link</a><a href="https://hackerdetector.com/calculator" target="_blank" rel="noreferrer">Data Breach Calculator</a></div>]}
-                Section1="Introduction"
-                para1={["I had a three-month internship as a Front End Developer at a cyber-security company called Secure Hive, where I got to enhance my development and team work skills. I worked alongside developers and designers in a SCRUM framework where we created multiple webpages and a React Native app. I gained experience working through the design and development process of these products, and became accustomed to the weekly sprints that we would have."]}
-                img1={Img2}
-                Section2="React Native App"
-                para2={["The React Native application was created by following a design and development process. We first planned, created, and tested mock-ups of the app to ensure usability before beginning development. I created low and high-fidelity wireframes to perfect the layout and flow of the app, and applied feedback from my colleagues that would test it. As for the development process, I used Node.js and React Native for the framework, and used Styled Components to maintain clean, reusable code. By working in a SCRUM framework, we were able to complete the project in less than 2 months.", <br />,<SmallText>* Due to a non-disclosure agreement, I am unable to show pictures of the mobile app.</SmallText>]}
-                img2={Img3}
-                displayPara3="block"
-                Section3="Webpages"
-                para3={["Similarly to creating the React Native application, my team and I followed a design and development process for creating webpages. The ", <a href="https://hackerdetector.com/calculator" target="_blank" rel="noreferrer">Data Breach Calculator</a>," was first designed using Figma where we created the UI and decided who will create each component. I created components, implemented functionality for the calculator, and enabled a responsive layout using Vue.js."]}
-                img3={Img1}
-                list={[
-                    <li>React js</li>,
-                    <li>Vue js</li>,
-                    <li>Axios API</li>,
-                    <li>Styled Components</li>
-                ]}
-            ></Project>
-            <NavBar header1="header1SecureHive" header2="header2SecureHive" color="#191e2c"></NavBar>
+           <Job
+                title={"Secure Hive"}
+                desc={"A tech security company looking to revolutionize the way companies secure themselves. I was tasked with creating an app that updates users on the status of their company's security, and also worked on a data breach calculator with other developers."}
+                role={"Front-end Developer Intern"}
+                date={"Jan. 2022 - Aug. 2022"}
+
+                proj_1_title={"Security App"}
+                proj_1_link={"https://securehive.ca/"}
+                proj_1_desc={"A mobile app that notifies users of the status of their company's security. I developed a front-end primarily using React Native, Node.js and Styled Components. API connections were done using Express.js."}
+                proj_1_skills={
+                    <div className='skill_cont'>
+                        <div className='skill'>React Native</div>
+                        <div className='skill'>Styled Components</div>
+                        <div className='skill'>Node.js</div>
+                        <div className='skill'>Express.js</div>
+                        <div className='skill'>JavaScript</div>
+                        <div className='skill'>CSS</div>
+                    </div>}
+                proj_1_imgs={
+                    <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className="mySwiper" style={{marginTop:"16px"}}>
+                        <SwiperSlide><img alt='home page of Secure Hive' className='proj_img' src={Img_SecureHive_3}></img></SwiperSlide>
+                    </Swiper>}
+
+                proj_2_title={"Data Breach Calculator"}
+                proj_2_link={"https://hackerdetector.com/calculator"}
+                proj_2_desc={"A calculator to help users estimate the potential damage their company could face from a data breach. A team and I developed this calculator using Vue.js and conducted research to fine-tune our calculator to make apropriate estimates."}
+                proj_2_skills={
+                    <div className='small-w-opensans, skill_cont'>
+                        <div className='skill'>Vue.js</div>
+                        <div className='skill'>CSS</div>
+                        <div className='skill'>Figma</div>
+                        <div className='skill'>HTML</div>
+                    </div>}
+                proj_2_imgs={
+                    <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className="mySwiper" style={{marginTop:"16px"}}>
+                        <SwiperSlide><img alt='Data breach calculator' className='proj_img' src={Img_SecureHive_1}></img></SwiperSlide>
+                        <SwiperSlide><img alt='Information on data breachs' className='proj_img' src={Img_SecureHive_2}></img></SwiperSlide>
+                    </Swiper>}
+
+                proj_3_display={"none"}
+            />
+            <NavBar header2="header2" color="#191e2c"></NavBar>
         </Page>
     )
 }

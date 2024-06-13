@@ -9,7 +9,7 @@ import Kibble from './pages/ModernKibble';
 import SecureHive from './pages/SecureHive';
 import BCIT from './pages/BCIT';
 import Stayshure from './pages/Stayshure';
-import Footprint from './pages/0FootPrint';
+import Footprint from './pages/FootPrint';
 
 import ScrollToTop from './comps/ScrollToTop';
 

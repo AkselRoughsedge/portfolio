@@ -183,33 +183,29 @@ a:visited {
   font-weight: 400;
 }
 
-.big-text {
-    font-size: 38pt;
-    @media (max-width: 800px) {
-      font-size:30pt;
+// PROJECT ELEMENTS
+
+.skill {
+  border-radius:16px;
+  padding-left:8px;
+  padding-right:8px;
+  background-color: #52618f;
+}
+
+.skill_cont {
+  display: flex;
+  gap:8px;
+  flex-wrap: wrap;
+}
+
+.proj_img{
+  width:100%;
+  height:600px;
+  object-fit: cover;
+  border-radius:8px;
+  @media (max-width: 800px) {
+      height:500px;
     }
-}
-
-.medium-text {
-  font-size: 28pt;
-  @media (max-width: 800px) {
-    font-size:24pt;
-  }
-}
-
-.normal-text {
-  font-size: 18pt;
-  line-height: 30pt;
-  @media (max-width: 800px) {
-    font-size: 16pt;
-  }
-}
-
-.small-text {
-  font-size: 14pt;
-  @media (max-width: 800px) {
-    font-size: 14pt;
-  }
 }
 
 //HOME NAVBAR
