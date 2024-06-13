@@ -27,7 +27,7 @@ const SecureHive = () => {
                 title={"Secure Hive"}
                 desc={"A tech security company looking to revolutionize the way companies secure themselves. I was tasked with creating an app that updates users on the status of their company's security, and also worked on a data breach calculator with other developers."}
                 role={"Front-end Developer Intern"}
-                date={"Jan. 2022 - Aug. 2022"}
+                date={"Mar. 2021 - May 2021"}
 
                 proj_1_title={"Security App"}
                 proj_1_link={"https://securehive.ca/"}
