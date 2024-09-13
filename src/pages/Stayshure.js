@@ -35,20 +35,20 @@ const Stayshure = () => {
         <Page>
            <Job
                 title={"Stayshure"}
-                desc={"While at Stayshure, a no-code development agency in Canada, I developed backend workflows that ran calculations, developed custom Javascript plugins to solve problems, and connected to API endpoints such as Backendless, SalesForce, and SharePoint to pass data. Some of my largest contributions included creating investment reporting software, university application management software, and a tool for converting bank statements to CSVs."}
+                desc={"While at Stayshure, a no-code development agency in Canada, I developed backend workflows that ran calculations, developed custom Javascript plugins to solve problems, and connected to API endpoints such as Backendless, SalesForce, and SharePoint to pass data. As a Senior Product Developer, I often guided the development of applications by researching the most efficient way to solve problems, and guiding other developers on best practices for developing in Bubble. Below are some of my largest contributions to client projects."}
                 role={"Senior Product Developer"}
                 date={"Aug. 2022 - May 2024"}
 
                 proj_1_title={"Thomvest Ventures"}
                 proj_1_link={"https://tfintracker.com/"}
-                proj_1_desc={"An investment reporting software for Thomvest Ventures to manage and view all of their investments. I utilized Backendless's cloud code to calculate portfolio metrics and visualized the data using Chart.js and Javascript. Users are authenticated into the app by SMS codes sent to their phone using Vonage."}
+                proj_1_desc={"An investment reporting software for Thomvest Ventures to manage and view all of their investments. I utilized Backendless's cloud code to calculate portfolio metrics and visualized the data using Chart.js and Javascript. I also created a 2FA using Vonage that requires users to authenticate themselves before gaining access to the rest of the app, in order to increase site security."}
                 proj_1_skills={
                     <div className='skill_cont'>
+                        <div className='skill'>Bubble.io</div>
                         <div className='skill'>Backendless</div>
                         <div className='skill'>Javascript</div>
                         <div className='skill'>Chart.js</div>
                         <div className='skill'>Vonage</div>
-                        <div className='skill'>Bubble.io</div>
                         <div className='skill'>Sendgrid</div>
                     </div>}
                 proj_1_imgs={
@@ -61,14 +61,14 @@ const Stayshure = () => {
 
                 proj_2_title={"OzTREKK"}
                 proj_2_link={"https://portal.oztrekk.com/"}
-                proj_2_desc={"A portal for students applying to universities to check the status of their applications and submit any required documents. I created API calls to OzTREKK's SalesForce database to sync student data, create tasks, and send chat logs. Documents that students upload are sent to SharePoint and notify OzTREKK staff."}
+                proj_2_desc={"A portal for students applying to universities to check the status of their applications and submit any required documents. I created API calls to OzTREKK's SalesForce database for syncing student data, creating tasks, and sending chat logs. Documents that students upload are sent to SharePoint using an API call I created and OZTREKK staff are always notified."}
                 proj_2_skills={
                     <div className='small-w-opensans, skill_cont'>
+                        <div className='skill'>Bubble.io</div>
                         <div className='skill'>SalesForce</div>
                         <div className='skill'>SharePoint</div>
                         <div className='skill'>JavaScript</div>
                         <div className='skill'>Google OAuth 2.0</div>
-                        <div className='skill'>Bubble.io</div>
                         <div className='skill'>SendGrid</div>
                     </div>}
                 proj_2_imgs={
@@ -80,14 +80,14 @@ const Stayshure = () => {
 
                 proj_3_title={"NachoDesk"}
                 proj_3_link={"https://app.nachodesk.com/"}
-                proj_3_desc={"A tool for converting bank statements into CSVs that can then be uploaded to Quickbooks. I created a custom JavaScript plugin that takes transcribed text from OpenAI and converts it into a CSV format for the user. I also built in monthly subscription functionality that's managed using Outseta."}
+                proj_3_desc={"A tool for converting bank statements into CSVs that can then be uploaded to QuickBooks. I created a custom JavaScript plugin that takes transcribed text from OpenAI and converts it into a CSV format for the user. I also built in a subscription service that determines restrictions and app usage, managed by the client using Outseta."}
                 proj_3_skills={
                     <div className='small-w-opensans, skill_cont'>
+                        <div className='skill'>Bubble.io</div>
                         <div className='skill'>Custom JavaScript Plugin</div>
                         <div className='skill'>OpenAI</div>
                         <div className='skill'>JavaScript</div>
                         <div className='skill'>Outseta</div>
-                        <div className='skill'>Bubble.io</div>
                     </div>}
                 proj_3_imgs={
                     <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className="mySwiper" style={{marginTop:"16px"}}>
